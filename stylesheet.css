@@ -1,0 +1,347 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --violet: hsl(263, 55%, 52%); /* Moderate violet */
+    --dark-grayish-blue: hsl(217, 19%, 35%);/* Very dark grayish blue */
+    --dark-blackish-blue: hsl(219, 29%, 14%);/* Very dark blackish blue */
+    --light-gray: hsl(0, 0%, 81%);/* Light gray */
+    --light-grayish-blue: hsl(210, 46%, 95%);/* Light grayish blue */
+}
+/* 
+Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+
+*/
+
+/* || CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ||  GENERAL STYLES*/
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: var(--light-grayish-blue);
+    box-sizing: border-box;
+}
+.first-container, .second-container, .third-container, .fourth-container,
+.fifth-container {
+    -webkit-box-shadow: 5px 10px 26px -10px rgba(0, 0, 0, 0.87);
+    box-shadow: 5px 10px 26px -10px rgba(163, 163, 163, 0.87);
+}
+.border-img {
+    border: 2px solid #A775F1;
+}
+
+
+/* 	=====================
+	   DESKTOP 1440px
+    =====================
+*/
+@media screen and (min-width: 960px) {
+.container {
+    display: grid;
+    max-width: 1110px;
+    max-height: 572px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 24px;
+    grid-template-areas:
+        "t1 t1 t2 t5"
+        "t3 t4 t4 t5";
+    margin: auto;
+    margin-top: 5.7%;
+}
+
+.first-container {
+    width: 540px;
+    height: 282px;
+    grid-area: t1;
+    background-color: var(--violet);
+    border-radius: 8px;
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+.testimonial {
+    opacity: 0.7;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 16px 32px 32px 32px;
+    font-weight: 500;
+}
+
+.text1 {
+    color:var(--white);
+}
+.q-mark {
+    width: 104px;
+    height: 102px;
+    right: 80px ;
+    top: 0;
+    opacity: 0.7;
+    z-index: -1;
+    position: absolute;
+    border: none;
+}
+.second-container {
+    width: 255px;
+    height: 282px;
+    grid-area: t2;
+    background-color: var(--dark-grayish-blue);
+    border-radius: 8px;
+    color: white;
+}
+.name3, .name5 {
+    color: var(--dark-grayish-blue);
+}
+.text3, .text5 {
+    color: var(--dark-grayish-blue);
+    opacity: 0.5;
+}
+.text3, .text4, .text5 {
+    margin-top: 26px;
+}
+.heading3, .heading5 {
+    color: var(--dark-grayish-blue);
+}
+
+.third-container {
+    width: 255px;
+    height: 266px;
+    grid-area: t3;
+    background-color:var(--white);
+    border-radius: 8px;
+}
+.fourth-container {
+    width: 540px;
+    height: 266px;
+    grid-area: t4;
+    background-color: var(--dark-blackish-blue);
+    border-radius: 8px;
+    color: white;
+}
+.fifth-container {
+    width: 255px;
+    height: 572px;
+    grid-area: t5;
+    background-color: var(--white);
+    border-radius: 8px;
+}
+.profile img {
+    border-radius: 50%;
+    border: 2px solid none;
+    width: 28px;
+    height: 28px;
+}
+.profile {
+    display: flex; /*restul trebuie sters si refacut*/
+    margin-left: 32px;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.who {
+    margin-left: 17px;
+}
+.verified-grad {
+    font-size: 11px;
+    opacity: 0.5;
+}
+.testimonial-heading {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 15px 32px 0px 32px;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-top: 40px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+}
+
+
+/* 	=====================
+	    MOBILE 375px
+    =====================
+*/
+@media(max-width:375px) {
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 5.7%;
+    width: 87.2%;
+}
+
+.first-container {
+    width: 100%;
+    height: auto;
+    grid-area: t1;
+    background-color: var(--violet);
+    border-radius: 8px;
+    color: white;
+    z-index: 1;
+    position: relative;
+    margin-top: 71px;
+    margin-bottom: 24px;
+}
+.testimonial {
+    opacity: 0.7;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 16px 32px 32px 32px;
+    font-weight: 500;
+}
+
+.text1 {
+    color:var(--white);
+    margin: 16px 48px 32px 32px;
+}
+.q-mark {
+    width: 104px;
+    height: 102px;
+    right: 24px ;
+    top: 0;
+    opacity: 0.7;
+    z-index: -1;
+    position: absolute;
+}
+.second-container {
+    width: 100%;
+    height: auto;
+    grid-area: t2;
+    background-color: var(--dark-grayish-blue);
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 24px;
+}
+.name3, .name5 {
+    color: var(--dark-grayish-blue);
+}
+.text3, .text5 {
+    color: var(--dark-grayish-blue);
+    opacity: 0.5;
+}
+
+.heading3, .heading5 {
+    color: var(--dark-grayish-blue);
+}
+
+.third-container {
+    width: 100%;
+    height: auto;
+    grid-area: t3;
+    background-color:var(--white);
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.fourth-container {
+    width: 100%;
+    height: auto;
+    grid-area: t4;
+    background-color: var(--dark-blackish-blue);
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 24px;
+}
+.fifth-container {
+    width: 100%;
+    height: auto;
+    grid-area: t5;
+    background-color: var(--white);
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.profile img {
+    border-radius: 50%;
+    border: 2px solid none;
+    width: 28px;
+    height: 28px;
+}
+
+.profile {
+    display: flex;
+    margin-left: 32px;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.who {
+    margin-left: 17px;
+}
+.verified-grad {
+    font-size: 11px;
+    opacity: 0.5;
+}
+.testimonial-heading {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 15px 32px 0px 32px;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-top: 5%;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+}
