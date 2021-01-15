@@ -41,8 +41,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    line-height: 1;
-    transform: translate(-50%, -50%)
+	line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -182,7 +181,7 @@ body {
     height: 28px;
 }
 .profile {
-    display: flex; /*restul trebuie sters si refacut*/
+    display: flex;
     margin-left: 32px;
     align-items: center;
     margin-top: 26px;
@@ -209,6 +208,7 @@ body {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
@@ -223,7 +223,7 @@ body {
 	    MOBILE 375px
     =====================
 */
-@media(max-width:376px) {
+@media(max-width:375px) {
 .container {
     display: flex;
     flex-direction: column;
