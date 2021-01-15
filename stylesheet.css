@@ -218,7 +218,7 @@ body {
 	    MOBILE 375px
     =====================
 */
-@media(max-width:375px) {
+@media(max-width:376px) {
 .container {
     display: flex;
     flex-direction: column;
