@@ -95,7 +95,7 @@ body {
         "t1 t1 t2 t5"
         "t3 t4 t4 t5";
     margin: auto;
-    margin-top: 165px;
+    transform: translate(-50%, -50%)
 }
 
 .first-container {
