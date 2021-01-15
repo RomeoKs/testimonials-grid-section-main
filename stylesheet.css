@@ -41,7 +41,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    transform: translate(-50%, -50%)
 }
 ol, ul {
 	list-style: none;
@@ -95,7 +96,6 @@ body {
         "t1 t1 t2 t5"
         "t3 t4 t4 t5";
     margin: auto;
-    transform: translate(-50%, -50%)
 }
 
 .first-container {
